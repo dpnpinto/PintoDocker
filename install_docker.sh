@@ -1,6 +1,9 @@
-#!/bin/bash
-# Instalar o Docker no Rocky Linux Linux
-# By dpnpinnto.github.io
+#!/usr/bin/env bash
+#
+# Author : Duarte Pinto
+# Date: November 2022
+# Version 1.0.0: "Install Docker Compose"
+#
 
 # Verificar se existem atualizações
 sudo dnf check-update
