@@ -4,7 +4,7 @@
 # Date: November 2022
 # Version 1.0.0: "Install Portainer"
 #
-docker volume create portainer_data
+sudo docker volume create portainer_data
 docker run -d \
 -p 8000:8000 \
 -p 9000:9000 \
