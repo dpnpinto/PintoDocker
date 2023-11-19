@@ -2,7 +2,7 @@
 #
 # Author : Duarte Pinto
 # Date: November 2022
-# Version 1.0.0: "Install Docker Compose"
+# Version 1.0.0: "Install Docker"
 #
 
 # Verificar se existem atualizações
