@@ -8,7 +8,7 @@
 # Verificar atualizações do Rocky
 sudo dnf check-update
 
-# Adicionar o repositório do docker se o necessário pois se foi executa o script de instalar o Docker este repositório já foi colocado
+# Adicionar o repositório do docker se necessário, se ja foi executa o script para instalar este repositório, o mesmo  já foi colocado
 sudo dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 
 # Adicionar o docker-compose-plugin 
