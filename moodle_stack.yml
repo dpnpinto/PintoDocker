@@ -1,0 +1,38 @@
+# Moodle Stack by dpnpinto@gmail.com
+version: '2'
+services:
+  mariadb:
+    image: mariadb
+    container_name: mariadb
+    ports:
+      - 3306:3306
+    volumes:
+      - /srv/dev-disk-by-x/dckcnfg/moodledb:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=moodle1
+      - MYSQL_ROOT_USER=root
+      - MYSQL_DATABASE=moodle
+      - ALLOW_EMPTY_PASSWORD=yes
+      - PUID=998
+      - PGID=100
+  moodle:
+    image: bitnami/moodle:latest
+    container_name: moodle
+    ports:
+      - 8089:8080
+      - 8449:8443
+    environment:
+      - MOODLE_DATABASE_HOST=mariadb
+      - MOODLE_DATABASE_USER=root
+      - MOODLE_DATABASE_PASSWORD=moodle1
+      - MOODLE_DATABASE_NAME=moodle
+      - ALLOW_EMPTY_PASSWORD=yes
+      - PUID=998
+      - PGID=100
+    volumes:
+      - /srv/dev-disk-by-x/dckcnfg/moodle:/bitnami/moodle
+      - /srv/dev-disk-by-x/dckcnfg/moodledata:/bitnami/moodledata
+    depends_on:
+      - mariadb
+    links:
+      - mariadb:mariadb
