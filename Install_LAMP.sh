@@ -33,4 +33,4 @@ sudo dnf -y install php php-mysqlnd php-cli
 sudo systemctl restart httpd.service
 
 #test page
-echo <?php phpinfo(); ?> >> /var/www/html/test.php
+echo "<?php phpinfo(); ?>" >> /var/www/html/teste.php
