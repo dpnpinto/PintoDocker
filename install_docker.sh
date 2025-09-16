@@ -2,7 +2,7 @@
 #
 # Author : Duarte Pinto
 # Date: November 2022
-# Version 1.0.0: "Install Docker"
+# Version 1.0.0: "Install Docker in Rocky Linux"
 #
 
 # Verificar se existem atualizações
