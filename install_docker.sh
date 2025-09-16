@@ -12,7 +12,8 @@ sudo dnf check-update
 sudo dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 
 # Instalar o software do docker e containers docker-ce (versão comunidade) docker-ce-cli (software de atuação cliente) container.io (plataforma de container utilizada pelo docker)
-sudo dnf install docker-ce docker-ce-cli containerd.io
+# docker-buildx-plugin - Advanced build operations like parallel multi-stage builds
+sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin
 
 # Arrancar com o daemon do docker
 sudo systemctl start docker
