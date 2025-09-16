@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #
 # Author : Duarte Pinto
-# Date: November 2022
-# Version 1.0.0: "Install Docker in Rocky Linux"
+# Date: Setembro 2025
+# Version 1.0.1: "Install Docker in Rocky Linux"
 #
 
 # Verificar se existem atualizações
