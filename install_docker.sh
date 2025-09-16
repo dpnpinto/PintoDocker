@@ -22,3 +22,6 @@ sudo systemctl status docker
 
 # Ativar o serviço no arranque do sistema operativo
 sudo systemctl enable docker
+
+# Adicionar o utilizador ao grupo Docker
+sudo usermod -aG docker $(whoami)
